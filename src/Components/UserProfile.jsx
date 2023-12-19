@@ -4,8 +4,8 @@ const Card1 = ({ FirstName,LastName,Skillset,DateOfBirth,Gender,Address,AvatarUr
  
 
   return (
-    <div style={{height:100,width:300,justifyContent:'center'}} className='container'>
-    <div className="card">
+    // <div style={{height:100,width:300}} className='container'>
+    <div  style={{height:400,width:300,margin:10}} className="card">
       <img style={{marginTop:10,marginLeft:60,height:200,width:150}}src={AvatarUrl} alt={`${FirstName} ${LastName}`} className="card-image" />
       <div className="card-content">
         <h2 className="card-name">{`${FirstName} ${LastName}`}</h2>
@@ -18,7 +18,7 @@ const Card1 = ({ FirstName,LastName,Skillset,DateOfBirth,Gender,Address,AvatarUr
       </div>
 
     </div>
-    </div>
+    // </div>
   );
 }
 
