@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HeaderComponent from './Layout/header';
 import Content from './Layout/Content';
-import Footer from './Layout/Footer';
+
 import UserForm from './Components/ManagePage';
 import Users from './Components/users';
 import Profile from './Components/profileData';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/404" element={<h3>User Not Fount</h3>}  />
         <Route path="*" element={<Navigate to="/404" replace/>}/>
       </Routes>
-      <div> <Footer/> </div>
+      
       
       </BrowserRouter>
     </div>
